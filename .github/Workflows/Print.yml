@@ -4,11 +4,11 @@ on:
     push:
 
 jobs:
-    say-hello:
-        runs-on:  ubuntu-latest
+     say-hello:
+         runs-on:  ubuntu-latest
 
-        steps:
-            - name: Print a message
-              run:  echo "Hello! a push detected in repo"
-            - name: do something
-              run: xyz
+         steps:
+             - name: Print a message
+               run:  echo "Hello! a push detected in repo"
+             - name: do something
+               run: xyz
