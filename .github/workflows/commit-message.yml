@@ -1,0 +1,18 @@
+name: Show commit message
+on:
+    push:
+        branches:
+             -main
+
+jobs:
+    print-message:
+       run-on: ubantu-latest
+
+       steps:
+           - name: checkout code
+             uses: actions/checkout@v5
+
+           - name: print commit message
+             run: |
+               echo "commit message"
+               echo "${{ github.event.head_commit.message }}"
